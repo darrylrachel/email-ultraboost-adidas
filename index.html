@@ -24,65 +24,248 @@
   <! [endif] -->
 
   <style type="text/css">
-    /* DELETE MODIFIERS */
-    .b-table {border: 1px solid aqua;}
-    .b-cell {border: 1px dashed magenta;}
-    /* DELETE MODIFIERS */
 
     table { 
       border-spacing: 0;
       border-collapse: collapse;
-    }
-    td {
-      padding: 0;
-    }
-    p {
-      font-size: 16px;
-      margin: 0;
-    }
-    img {
-      border: 0;
-    }
-    a {
-      text-decoration: none;
-      color: #3d3d3d;
-      font-size: 16px;
-    }
-    .content {
-      line-height: 20px;
-      font-size: 16px;
-    }
+      }
+      td {
+        padding: 0;
+      }
+      p {
+        font-size: 16px;
+        margin: 0;
+      }
+      img {
+        border: 0;
+      }
+      a {
+        text-decoration: none;
+        color: #3d3d3d;
+        font-size: 16px;
+      }
+      ul > a > li {
+        display: inline-block;
+        text-align: left;
+        padding-right: 15px;
+        font-size: 14px;
+      }
+      .content {
+        line-height: 20px;
+        font-size: 16px;
+        width: 100%;
+        max-width: 600px;
+      }
 
-    .ExternalClass {
-      width: 100%;
-    }
+      .ExternalClass {
+        width: 100%;
+      }
+      
+      .ExternalClass, .ExternalClass p, .ExternalClass span, 
+      .ExternalClass font, .ExternalClass td, .ExternalClass div {
+        line-height: 100%;
+      }
+
+      a[x-apple-data-detectors=true] {
+        color: inherit !important;
+        text-decoration: inherit !important;
+      }
+
+      .hero {
+        max-width: 600px;
+        width: 100%;
+      }
+
+      .button {
+        width: 100%;
+        padding: 14px 20px 0px 0px;
+        margin-top: 45px;
+      }
+      .btn {
+        color: #ffffff;
+        background-color: #000000;
+        font-size: 14px;
+        border: 1px solid #2d63c8;
+        padding: 15px 16px 15px 16px;
+        cursor: pointer;
+        text-align: left;
+      }
+      .btn.women {
+        width: 25%;
+      }
+      
+      .btn.men {
+        width: 21%;
+      }
+
     
-    .ExternalClass, .ExternalClass p, .ExternalClass span, 
-    .ExternalClass font, .ExternalClass td, .ExternalClass div {
-      line-height: 100%;
+
+    @media screen and (max-width: 599.98px) {
+      table { 
+      border-spacing: 0;
+      border-collapse: collapse;
+      }
+      td {
+        padding: 0;
+      }
+      p {
+        font-size: 16px;
+        margin: 0;
+      }
+      img {
+        border: 0;
+      }
+      a {
+        text-decoration: none;
+        color: #3d3d3d;
+        font-size: 16px;
+      }
+      ul > a > li {
+        display: inline-block;
+        text-align: left;
+        padding-right: 15px;
+        font-size: 14px;
+      }
+      .content {
+        line-height: 20px;
+        font-size: 16px;
+        width: 100%;
+        max-width: 600px;
+      }
+
+      .ExternalClass {
+        width: 100%;
+      }
+      
+      .ExternalClass, .ExternalClass p, .ExternalClass span, 
+      .ExternalClass font, .ExternalClass td, .ExternalClass div {
+        line-height: 100%;
+      }
+
+      a[x-apple-data-detectors=true] {
+        color: inherit !important;
+        text-decoration: inherit !important;
+      }
+
+      .hero {
+        max-width: 600px;
+        width: 100%;
+      }
+
+      .button {
+        width: 100%;
+        padding: 14px 20px 0px 0px;
+        margin-top: 45px;
+      }
+      .btn {
+        color: #ffffff;
+        background-color: #000000;
+        font-size: 14px;
+        border: 1px solid #2d63c8;
+        padding: 15px 16px 15px 16px;
+        cursor: pointer;
+        text-align: left;
+      }
+      .btn.women {
+        width: 25%;
+      }
+      
+      .btn.men {
+        width: 21%;
+      }
     }
 
-    a[x-apple-data-detectors=true] {
-      color: inherit !important;
-      text-decoration: inherit !important;
+    @media screen and (max-width: 399.98px) {
+      .content {
+        width: 100%;
+        max-width: 399px;
+      }
+      .hero {
+        width: 100%;
+        max-width: 399px;
+        margin: 0 auto;
+      }
+      .button {
+        padding-left: 20px;
+      }
+      .btn.women {
+        width: 90%;
+        text-align: center;
+      }
+      
+      .btn.men {
+        width: 90%;
+        text-align: center;
+      }
+      .hide-arr {
+        display: none;
+      }
+      ul > a > li {
+        padding: 10px 0;
+        display: block;
+      }
+      .alignment {
+        margin: 0 auto;
+      }
+      .ta-l {
+        text-align: left;
+      }
+      .ta-c {
+        text-align: left;
+      }
+      .cushion {
+        padding-left: 12px;
+        padding-right: 12px;
+      }
+
     }
 
-    .button {
-      width: 100%;
-      padding: 14px 20px 14px 20px;
-    }
-    .btn {
-      color: #ffffff;
-			background-color: #000000;
-			font-size: 19px;
-			border: 1px solid #2d63c8;
-			padding: 15px 50px;
-			cursor: pointer;
+    @media screen and (max-width: 499.98px) {
+      .content {
+        width: 100%;
+        max-width: 499px;
+      }
+      .hero {
+        width: 100%;
+        max-width: 499px;
+        margin: 0 auto;
+      }
+      .button {
+        padding-left: 20px;
+      }
+      .btn.women {
+        width: 90%;
+        text-align: center;
+      }
+      
+      .btn.men {
+        width: 90%;
+        text-align: center;
+      }
+      .hide-arr {
+        display: none;
+      }
+      ul > a > li {
+        padding: 10px 0;
+        display: block;
+      }
+      .alignment {
+        margin: 0 auto;
+      }
+      .ta-l {
+        text-align: left;
+      }
+      .ta-c {
+        text-align: left;
+      }
+      .cushion {
+        padding-left: 12px;
+        padding-right: 12px;
+      }
+
     }
 
-    @media screen and (max-width: 599.98px) {}
-
-    @media screen and (max-width: 399.98px) {}
+    
 
 
   </style>
@@ -120,12 +303,12 @@
               font-size:16px;
               margin:0 auto 40px;">
   
-    <div style="max-width: 600px;
-                background-color: #ffffff;
+    <div style="background-color: #ffffff;
                 font-family: Arial, Helvetica, sans-serif;
                 font-size: 16px;
                 box-shadow: 0 0 10x rgba(0, 0, 0, 0.2);
-                margin: 0 auto;">
+                margin: 0 auto;"
+          class="content">
 
       <!-- Preheader Text Goes Here ⏬ -->
       <div style="font-size: 0;
@@ -149,19 +332,21 @@
                           border-collapse: collapse;">
               <tr>
                 <td align="center" style="padding-top: 24px;">
-                  <img src="images/adidas-logo-main.png" alt="" width="37px" height="23px">
+                  <a href="https://www.adidas.com/us?cm_mmc=AdiEmail_SNL-_-Ultraboost-_-20240306_US:Ultraboost10ABtestw/oMIproductblock+EOQSale17778A_US_March-_-Marketing-_-HeaderAdidasLogo0-_-dv:eCom-_-cn:Static_Newsletter-_-pc:Running&cm_mmc1=US&cm_mmca3=8NROFPHA8RA63UQ4&cm_mmca4=3112801&cm_mmc2=adidas-NA-eCom-Email-SNL-running-None-US-Static_Newsletter-Ultraboost-2403&af_reengagement_window=30d&is_retargeting=true&pid=sfmc&c=adidas-NA-eCom-Email-SNL-running-None-US-Static_Newsletter-Ultraboost-2403&af_adset=&af_ad=HeaderAdidasLogo0&af_channel=Static_Newsletter"><img src="https://i.postimg.cc/4yvNJ3mc/adidas-logo-main.png
+" alt="" width="37px" height="23px"></a>
                 </td>
               </tr>
               <tr>
                 <td align="center" style="padding-top: 24px;">
-                  <img src="images/ultraboost-hero.jpeg" alt="">
+                  <a href="https://www.adidas.com/us?cm_mmc=AdiEmail_SNL-_-Ultraboost-_-20240306_US:Ultraboost10ABtestw/oMIproductblock+EOQSale17778A_US_March-_-Marketing-_-HeaderAdidasLogo0-_-dv:eCom-_-cn:Static_Newsletter-_-pc:Running&cm_mmc1=US&cm_mmca3=8NROFPHA8RA63UQ4&cm_mmca4=3112801&cm_mmc2=adidas-NA-eCom-Email-SNL-running-None-US-Static_Newsletter-Ultraboost-2403&af_reengagement_window=30d&is_retargeting=true&pid=sfmc&c=adidas-NA-eCom-Email-SNL-running-None-US-Static_Newsletter-Ultraboost-2403&af_adset=&af_ad=HeaderAdidasLogo0&af_channel=Static_Newsletter"><img src="https://i.postimg.cc/BZ2v5mMv/ultraboost-hero.jpg
+" alt="" class="hero"></a>
                 </td>
               </tr>
               <tr>
                 <td align="left">
                   <table width="100%">
                     <tr>
-                      <td align="left" style="padding-top: 40px;">
+                      <td align="left" style="padding-top: 40px;" class="cushion">
                         <p style="color: #111111; 
                                   font-weight: 400; 
                                   font-size: 38px; 
@@ -171,7 +356,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td align="left">
+                      <td align="left" class="cushion">
                         <p style="line-height: 22px; 
                                   font-size: 16px; 
                                   color:#111111; 
@@ -181,36 +366,158 @@
                   </table>
                   <table width="100%">
                     <tr>
-                      <td align="left">
-                        <tr>
-                          <td class="b-cell button">
-                            <div class="btn">
-                              <p style="text-transform: uppercase;">Shop Now</p>
-                            </div>
-                            
-                          </td>
-                        </tr>
-                        <tr>
-                          <td class="b-cell button">
-                            <div class="btn">
-                              <p style="text-transform: uppercase;">Shop Now</p>
-                            </div>
-                            
-                          </td>
-                        </tr>
+                      <td class="alignment">
+                        <table width="100%" cellpadding="0" cellspacing="0" role="presentation">
+                          <tr>
+                            <td align="left" style="padding-top: 40px;" class="cushion">
+                              <tr>
+                                <td class="button">
+                                  <div class="btn women">
+                                    <p style="display: inline; 
+                                              margin-right:10px; 
+                                              font-size: 14px; 
+                                              text-transform: uppercase;">Shop Women</p>
+                                    <a href="https://www.adidas.com/us/women-ultraboost_1.0?af_ad=CTADesktop&af_adset=&af_channel=Static_Newsletter&af_reengagement_window=30d&c=adidas-NA-eCom-Email-SNL-running-None-US-Static_Newsletter-Ultraboost-2403&cm_mmc=AdiEmail_SNL-_-Ultraboost-_-20240306_US%3AUltraboost10ABtestw%2FoMIproductblock%20EOQSale17778A_US_March-_-Marketing-_-CTADesktop-_-dv%3AeCom-_-cn%3AStatic_Newsletter-_-pc%3ARunning&cm_mmc1=US&cm_mmc2=adidas-NA-eCom-Email-SNL-running-None-US-Static_Newsletter-Ultraboost-2403&cm_mmca3=8NROFPHA8RA63UQ4&cm_mmca4=3112801&is_retargeting=true&pid=sfmc"><img src="https://i.postimg.cc/3NQx5GJ7/right-arr-wht.png" alt="" class="hide-arr"></a>
+                                  </div>
+                                  
+                                </td>
+                              </tr>
+                              <tr>
+                                <td class="button" class="cushion">
+                                  <div class="btn men">
+                                    <p style="display: inline; 
+                                              margin-right:10px; 
+                                              font-size: 14px;
+                                              text-transform: uppercase;">Shop Men</p>
+                                    <a href="https://www.adidas.com/us/men-ultraboost_1.0?af_ad=CTADesktop&af_adset=&af_channel=Static_Newsletter&af_reengagement_window=30d&c=adidas-NA-eCom-Email-SNL-running-None-US-Static_Newsletter-Ultraboost-2403&cm_mmc=AdiEmail_SNL-_-Ultraboost-_-20240306_US%3AUltraboost10ABtestw%2FoMIproductblock%20EOQSale17778A_US_March-_-Marketing-_-CTADesktop-_-dv%3AeCom-_-cn%3AStatic_Newsletter-_-pc%3ARunning&cm_mmc1=US&cm_mmc2=adidas-NA-eCom-Email-SNL-running-None-US-Static_Newsletter-Ultraboost-2403&cm_mmca3=8NROFPHA8RA63UQ4&cm_mmca4=3112801&is_retargeting=true&pid=sfmc"><img src="https://i.postimg.cc/3NQx5GJ7/right-arr-wht.png" alt="" class="hide-arr"></a>
+                                  </div>
+                                  
+                                </td>
+                              </tr>
+                            </td>
+                          </tr>
+                        </table>
                       </td>
                     </tr>
                   </table>
                 </td>
               </tr> <!-- end iconic feels section-->
+
+              <tr>
+                <td>
+                  <table width="100%" cellpadding="0" cellspacing="0" role="presentation">
+                    <tr>
+                      <td align="center" style="padding-top: 40px;">
+                        <img src="https://i.postimg.cc/NfYjdRzk/mid-season-sale-hero.png
+" alt="" class="hero">
+                      </td>
+                    </tr>
+                    <tr>
+                      <td align="left" class="cushion">
+                        <table width="100%">
+                          <tr>
+                            <td align="left" style="padding-top: 40px;" class="cushion">
+                              <p style="color: #111111; 
+                                        font-weight: 400; 
+                                        font-size: 38px; 
+                                        letter-spacing: 1px; 
+                                        line-height: 38px;
+                                        margin-bottom: 0; 
+                                        text-transform: uppercase;">Spring Savings</p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td align="left" class="cushion">
+                              <p style="line-height: 22px; 
+                                        font-size: 16px; 
+                                        color:#111111; 
+                                        padding-top: 40px;">A new season is right around the corner—and it’s the perfect time to stock up on new styles. Get thousands of items for up to 50% off during our Mid-Season Sale—including jackets, shirts, sneakers and outdoor essentials—for a limited time only. No code needed.</p>
+                            </td>
+                          </tr>
+                        </table>
+                        <table width="100%">
+                          <tr>
+                            <td align="left" style="padding-top: 40px;" class="cushion">
+                              <tr>
+                                <td class="button">
+                                  <div class="btn women">
+                                    <p style="display: inline; 
+                                              margin-right:10px; 
+                                              font-size: 14px; 
+                                              text-transform: uppercase;">Shop Now</p>
+                                    <a href="https://www.adidas.com/us/sale?af_ad=CTADesktop&af_adset=&af_channel=Static_Newsletter&af_reengagement_window=30d&c=adidas-NA-eCom-Email-SNL-running-None-US-Static_Newsletter-Ultraboost-2403&cm_mmc=AdiEmail_SNL-_-Ultraboost-_-20240306_US%3AUltraboost10ABtestw%2FoMIproductblock%20EOQSale17778A_US_March-_-Marketing-_-CTADesktop-_-dv%3AeCom-_-cn%3AStatic_Newsletter-_-pc%3ARunning&cm_mmc1=US&cm_mmc2=adidas-NA-eCom-Email-SNL-running-None-US-Static_Newsletter-Ultraboost-2403&cm_mmca3=8NROFPHA8RA63UQ4&cm_mmca4=3112801&is_retargeting=true&pid=sfmc"><img src="https://i.postimg.cc/3NQx5GJ7/right-arr-wht.png" alt="" class="hide-arr"></a>
+                                  </div>
+                                </td>
+                              </tr>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
+                </td> 
+              </tr> <!-- end sale hero-->
+
+              <tr>
+                <td>
+                  <table width="100%" cellpadding="0" cellspacing="0" role="presentation" style="margin-top: 40px;">
+                    <tr>
+                      <td align="center" style="border-top: 1px solid #c6c6c6; 
+                                                border-bottom: 2px solid #c6c6c6; 
+                                                padding: 15px 5px;" class="cushion">
+                        <strong>
+                          <p style="font-weight: 700;
+                                    font-size: 14px;
+                                    line-height: 22px;
+                                    text-transform: uppercase;
+                                    letter-spacing: 2px;">STORIES, STYLES AND SPORTSWEAR AT ADIDAS, SINCE 1949</p>
+                        </strong>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr> <!-- end attribution-->
+
+              <tr>
+                <td>
+                  <table width="100%" cellpadding="0" cellspacing="0" role="presentation" style="margin-top: 40px;">
+                    <tr>
+                      <td>
+                        <table cellpadding="0" cellspacing="0" role="presentation" width="100%" style="margin-top: 20px;">
+                          <tr>
+                            <td align="left" class="cushion">
+                              <ul style="display: inline; text-decoration: none; padding: 0;">
+                                <a href="https://click.link.adidas.com/?qs=682996098bb9969aaffd0dfa0e203f7f74f0064f711514cb64d1f21e55cbc5a58c1ee2d182d02735a16f3cf4f8808657fd92e3e645a77209dda62319b819bb7f"><li>My Account</li></a>
+                                <a href="https://click.link.adidas.com/?qs=682996098bb9969aa218b9132736f043346af6899fd6cefafa2e7a30d54f9bebf6a3b181fffdaa99d5b06c36396e174ccd0fed49c8ad10ea8a2520a40ab1f09d"><li>Privacy Statement</li></a>
+                                <a href="https://click.link.adidas.com/?qs=682996098bb9969a6e7644d2fbf12cd175b35b90859adc309852d38a3b3b761b58e792afa44343dabf8e3fa29be72d2993dd3e5664b13e01c17d32758c31365d"><li>Support</li></a>
+                                <a href="https://click.link.adidas.com/?qs=682996098bb9969a488689fa739b797f651ce34f74d21494f962ac06f5c66fc226db9003b837697ec972cf2d25a31ecb90dc62629823165615cc69499cfa26d2"><li>Unsubscribe</li></a>
+                                <a href="https://click.link.adidas.com/?qs=682996098bb9969a300d0cba40a0b6210f056e60acb97d17128f5d50545c1316bade98944534710efc9c735e93594f9f5d69a89a0b5aeee69b0461dea784b3c3"><li>adidas.com/us</li></a>
+                              </ul>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr> <!-- end link footer-->
+
+              <tr>
+                <td>
+                  <table cellpadding="0" cellspacing="0" role="presentation" width="100%" style="margin-top: 40px;">
+                    <tr>
+                      <td align="left" class="cushion">
+                        <p style="font-size: 14px; color: #000000; line-height: 22px;">© 2024 adidas America, Inc. adidas and the 3-Stripes mark are registered trademarks of adidas America 5055 N. Greeley Avenue Portland, OR 97217</p>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr> <!-- end copy footer-->
             </table>
           </td>
         </tr>
       </table>
-
     </div>
   </div>
-  
-  
 </body>
 </html>
